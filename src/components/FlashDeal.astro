@@ -1,0 +1,91 @@
+---
+---
+<div class="flash-deal">
+  <div class="container deal-content">
+    <div class="deal-badge">🔥 FLASH DEAL</div>
+    <p>INSTANT <span class="highlight">10% CASHBACK</span> ON EVERY PURCHASE!</p>
+    <div class="countdown" id="deal-countdown">
+      ENDS IN <span id="timer">12:54:21</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .flash-deal {
+    background: linear-gradient(90deg, #FF4D00, #FF1F00, #FF4D00);
+    background-size: 200% auto;
+    animation: gradientMove 3s linear infinite;
+    padding: 0.75rem 0;
+    margin-top: 80px; /* Offset for fixed nav */
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  .deal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  .deal-badge {
+    background: white;
+    color: var(--primary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 900;
+  }
+
+  .highlight {
+    color: var(--secondary);
+    text-decoration: underline;
+  }
+
+  .countdown {
+    background: rgba(0,0,0,0.2);
+    padding: 0.2rem 1rem;
+    border-radius: 99px;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .deal-content {
+      gap: 0.5rem;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<script>
+  function updateTimer() {
+    const timerElement = document.getElementById('timer');
+    if (!timerElement) return;
+
+    let totalSeconds = 12 * 3600 + 54 * 60 + 21;
+    
+    // Simple mock countdown
+    setInterval(() => {
+      totalSeconds--;
+      const hrs = Math.floor(totalSeconds / 3600);
+      const mins = Math.floor((totalSeconds % 3600) / 60);
+      const secs = totalSeconds % 60;
+      
+      timerElement.textContent = `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }, 1000);
+  }
+
+  updateTimer();
+</script>

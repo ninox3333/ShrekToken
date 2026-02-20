@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import FlashDeal from '../components/FlashDeal.astro';
+import Hero from '../components/Hero.astro';
+import BuySection from '../components/BuySection.astro';
+import Tokenomics from '../components/Tokenomics.astro';
+import Utility from '../components/Utility.astro';
+import Roadmap from '../components/Roadmap.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Charizard Token // $CHZ - Dragon-Forged Deflationary Asset">
+	<Navigation />
+	<main>
+		<FlashDeal />
+		<Hero />
+		<BuySection />
+		<Tokenomics />
+		<Utility />
+		<Roadmap />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		overflow-x: hidden;
+	}
+</style>

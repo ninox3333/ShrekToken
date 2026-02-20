@@ -1,0 +1,142 @@
+---
+---
+<section class="roadmap" id="roadmap">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="text-gradient">Ignition Roadmap</h2>
+      <p>Strategic, unstoppable, and ready to conquer the next arena.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item active">
+        <div class="phase-badge">Phase 01</div>
+        <h3>SPARK</h3>
+        <p>Token launch, genesis airdrop to early flame-bearers, liquidity ignition, and the first ceremonial burn.</p>
+        <span class="status pulse">IN PROGRESS</span>
+      </div>
+      <div class="timeline-item">
+        <div class="phase-badge">Phase 02</div>
+        <h3>BLAZE</h3>
+        <p>Cross-exchange listings, GameFi integrations, and Charizard lore-driven NFT ascent.</p>
+        <span class="status">UPCOMING</span>
+      </div>
+      <div class="timeline-item">
+        <div class="phase-badge">Phase 03</div>
+        <h3>INFERNO</h3>
+        <p>DAO governance, recurring deflation events, and global community raids to expand the fire.</p>
+        <span class="status">UPCOMING</span>
+      </div>
+    </div>
+
+    <div class="cta-banner glass-card">
+      <h2>EMPOWER THE HOLDERS</h2>
+      <p>Every token holder is part of an elite squadron of fire-breathers. Join the mission to transform early believers into the next wave of crypto millionaires.</p>
+      <div class="cta-btns">
+        <a href="#buy" class="btn btn-primary">GET $CHZ NOW</a>
+        <a href="#" class="btn btn-outline">VIEW LITEPAPER</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .roadmap {
+    padding: 5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+
+  .timeline-item {
+    background: var(--glass);
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    position: relative;
+  }
+
+  .timeline-item.active {
+    border-color: var(--primary);
+    box-shadow: 0 0 30px rgba(255, 77, 0, 0.1);
+  }
+
+  .phase-badge {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .timeline-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+  }
+
+  .status {
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 0.3rem 0.8rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+    color: var(--text-muted);
+  }
+
+  .status.pulse {
+    background: var(--primary);
+    color: white;
+    animation: soft-pulse 2s infinite;
+  }
+
+  @keyframes soft-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+  .cta-banner {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(rgba(255, 77, 0, 0.1), transparent), var(--glass);
+  }
+
+  .cta-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-banner p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  @media (max-width: 900px) {
+    .timeline { grid-template-columns: 1fr; }
+    .cta-btns { flex-direction: column; }
+  }
+</style>

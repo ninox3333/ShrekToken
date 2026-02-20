@@ -1,0 +1,116 @@
+---
+---
+<nav class="nav">
+  <div class="container nav-content">
+    <a href="/" class="logo">
+      <img src="/logo.png" alt="Charizard Token Logo" class="logo-img" />
+      <span class="logo-text">CHARIZARD <span class="text-gradient">TOKEN</span></span>
+    </a>
+    
+    <div class="nav-links">
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#utility">Utility</a>
+      <a href="https://t.me/+vQBILWIpJqQwOGI0" target="_blank" class="nav-social">Join Telegram</a>
+    </div>
+
+    <div class="mobile-menu-btn" id="mobile-menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+
+  .logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+
+  .logo-emoji {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links a:hover {
+    color: var(--text);
+  }
+
+  .connect-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-btn span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    transition: 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links, .connect-btn {
+      display: none;
+    }
+    
+    .mobile-menu-btn {
+      display: flex;
+    }
+  }
+</style>

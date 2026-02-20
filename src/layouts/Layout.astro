@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Charizard Token - Forged in digital fire, a deflationary asset engineered to empower a fearless community." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+	</head>
+	<body>
+		<slot />
+		
+		<style is:global>
+			/* Custom Scrollbar */
+			::-webkit-scrollbar {
+				width: 8px;
+			}
+			::-webkit-scrollbar-track {
+				background: var(--background);
+			}
+			::-webkit-scrollbar-thumb {
+				background: #333;
+				border-radius: 4px;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background: var(--primary);
+			}
+		</style>
+	</body>
+</html>

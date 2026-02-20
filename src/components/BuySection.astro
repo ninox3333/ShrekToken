@@ -1,0 +1,360 @@
+---
+---
+<section class="buy-section" id="buy">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="text-gradient">Limited Time Ignition</h2>
+      <p>Quick Buy $CHZ // Secure Treasury Send</p>
+    </div>
+
+    <div class="buy-grid">
+      <!-- Direct Send Card -->
+      <div class="glass-card buy-card single-card">
+        <div class="card-badge">🔥 MOST TRUSTED</div>
+        <h3>DIRECT TREASURY SEND</h3>
+        <p class="card-desc">Transfer SOL directly to our secure wallet and receive $CHZ + Bonuses instantly.</p>
+        
+        <div class="address-box">
+          <span class="address-label">TREASURY WALLET</span>
+          <div class="address-content">
+            <code id="treasury-addr">9Vsan6w7QaGHDEbF1JcgruDVcbsS3xkEMgeZmAQGJ5wP</code>
+            <button class="copy-btn" data-copy="9Vsan6w7QaGHDEbF1JcgruDVcbsS3xkEMgeZmAQGJ5wP">COPY</button>
+          </div>
+        </div>
+
+        <div class="rate-info">
+          <div class="rate-item">
+            <span class="label">MIN PURCHASE</span>
+            <span class="value">0.1 SOL</span>
+          </div>
+          <div class="rate-item">
+            <span class="label">EST. RECEIVED</span>
+            <span class="value">385,000 $CHZ</span>
+          </div>
+        </div>
+
+        <div class="card-foot">
+          <span class="bounty-badge">🎰 + 10X AIRDROP ENTRY</span>
+          <p class="foot-note">Tokens airdropped in under 60 seconds! ⚡</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contract-footer">
+      <div class="glass-card contract-box">
+        <div class="contract-info">
+          <span class="label">TOKEN CONTRACT (IMPORT ONLY)</span>
+          <code>9VXJtwimaNoELHnXYJJiziHnJoKB3nM6aCbJaVJuhi99</code>
+          <button class="copy-btn mini" data-copy="9VXJtwimaNoELHnXYJJiziHnJoKB3nM6aCbJaVJuhi99">COPY</button>
+        </div>
+        <p class="warning">⚠️ DO NOT SEND SOL TO THIS CONTRACT ADDRESS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .buy-section {
+    padding: 5rem 0;
+    background: radial-gradient(circle at bottom, #1A0A00 0%, var(--background) 70%);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .buy-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .buy-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-color: var(--glass-border);
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .single-card {
+    border-color: var(--primary);
+    background: rgba(255, 77, 0, 0.05);
+    padding: 3rem;
+  }
+
+  .card-badge {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: var(--primary);
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .card-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .address-box {
+    background: rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .address-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .address-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .address-content code {
+    font-family: monospace;
+    font-size: 0.85rem;
+    word-break: break-all;
+    color: var(--primary);
+  }
+
+  .copy-btn {
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .rate-info {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .rate-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rate-item .label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+  }
+
+  .rate-item .value {
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+
+  .bounty-badge {
+    display: block;
+    margin-top: 1.5rem;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    color: black;
+    padding: 0.4rem;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+
+  .foot-note {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--text-muted);
+  }
+
+  /* Buy Form */
+  .buy-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .input-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .input-with-symbol {
+    display: flex;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+
+  .input-with-symbol input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    outline: none;
+  }
+
+  .quick-presets {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+  }
+
+  .preset {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .preset:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+  }
+
+  .receive-box {
+    background: rgba(255, 77, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .receive-value {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0.5rem 0;
+  }
+
+  .receive-value .unit {
+    font-size: 1rem;
+    color: var(--primary);
+  }
+
+  .bonus-tag {
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .buy-btn {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .security-note {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .contract-footer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contract-box {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .contract-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .contract-info code {
+    background: rgba(0,0,0,0.3);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+
+  .warning {
+    color: #FF1F00;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 900px) {
+    .buy-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .receive-value {
+      font-size: 2rem;
+    }
+    .quick-presets {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
+<script>
+  const copyBtns = document.querySelectorAll('.copy-btn');
+
+  copyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = (btn as HTMLButtonElement).dataset.copy;
+      if (text) {
+        navigator.clipboard.writeText(text);
+        const originalText = btn.textContent;
+        btn.textContent = 'COPIED!';
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 2000);
+      }
+    });
+  });
+</script>

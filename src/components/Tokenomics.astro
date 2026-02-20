@@ -1,0 +1,150 @@
+---
+---
+<section class="tokenomics" id="tokenomics">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="text-gradient">Dragon-Forged Tokenomics</h2>
+      <p>$CHZ blends iconic Charizard energy with disciplined supply mechanics.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="glass-card stat-card">
+        <div class="icon-circle">💎</div>
+        <h4>Total Supply</h4>
+        <div class="stat-big">1,000,000,000</div>
+        <p>$CHZ</p>
+      </div>
+      <div class="glass-card stat-card">
+        <div class="icon-circle">🔥</div>
+        <h4>Burn Mechanism</h4>
+        <div class="stat-big">Deflationary</div>
+        <p>Auto-Burn Events</p>
+      </div>
+      <div class="glass-card stat-card">
+        <div class="icon-circle">🛡️</div>
+        <h4>Liquidity</h4>
+        <div class="stat-big">Battle-Tested</div>
+        <p>Locked & Secure</p>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="dot red"></div>
+        <div>
+          <h5>Dynamic Burn Events</h5>
+          <p>Reduces circulating supply with every major milestone to fuel scarcity.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="dot orange"></div>
+        <div>
+          <h5>Community Vaults</h5>
+          <p>Funds cross-chain expansion and real-world utility for the flame-bearers.</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="dot blue"></div>
+        <div>
+          <h5>Transparent Governance</h5>
+          <p>On-chain voting lets the community decide the next evolution of $CHZ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tokenomics {
+    padding: 5rem 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+  }
+
+  .icon-circle {
+    width: 64px;
+    height: 64px;
+    background: var(--glass);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+    border: 1px solid var(--glass-border);
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-big {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: white;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  .info-item {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .dot.red { background: #FF1F00; box-shadow: 0 0 10px #FF1F00; }
+  .dot.orange { background: #FF4D00; box-shadow: 0 0 10px #FF4D00; }
+  .dot.blue { background: #00D4FF; box-shadow: 0 0 10px #00D4FF; }
+
+  h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+
+  .info-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+</style>
