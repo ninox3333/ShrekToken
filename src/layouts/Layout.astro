@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import '../styles/global.css';
 
 interface Props {
@@ -31,6 +32,7 @@ const { title, description = "Charizard Token - Forged in digital fire, a deflat
 	</head>
 	<body>
 		<slot />
+		<Analytics />
 		
 		<style is:global>
 			/* Custom Scrollbar */

@@ -8,6 +8,7 @@ import Tokenomics from '../components/Tokenomics.astro';
 import Utility from '../components/Utility.astro';
 import Roadmap from '../components/Roadmap.astro';
 import Footer from '../components/Footer.astro';
+import CTASection from '../components/CTASection.astro';
 ---
 
 <Layout title="Charizard Token // $CHZ - Dragon-Forged Deflationary Asset">
@@ -15,9 +16,26 @@ import Footer from '../components/Footer.astro';
 	<main>
 		<FlashDeal />
 		<Hero />
+    <CTASection 
+      title="🚀 PRESALE IS LIVE NOW" 
+      subtitle="The strategic evolution starts today. Secure your $CHZ before the next burn event."
+      type="success"
+    />
 		<BuySection />
+    <CTASection 
+      title="🔥 MULTIPLY YOUR GAINS" 
+      subtitle="Every 0.1 SOL gives you a 10X chance to win the Legendary $10,000 Airdrop!"
+      buttonText="SEND SOL NOW"
+      type="primary"
+    />
 		<Tokenomics />
 		<Utility />
+    <CTASection 
+      title="🛡️ BATTLE-TESTED & SECURE" 
+      subtitle="Join the 1,000,000,000 supply fire-breathing elite squadron."
+      buttonText="JOIN THE FLAME"
+      type="dark"
+    />
 		<Roadmap />
 	</main>
 	<Footer />
