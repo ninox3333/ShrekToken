@@ -7,6 +7,7 @@
     <div class="countdown" id="deal-countdown">
       ENDS IN <span id="timer">12:54:21</span>
     </div>
+    <a href="#buy" class="deal-btn">BUY NOW</a>
   </div>
 </div>
 
@@ -15,13 +16,14 @@
     background: linear-gradient(90deg, #FF4D00, #FF1F00, #FF4D00);
     background-size: 200% auto;
     animation: gradientMove 3s linear infinite;
-    padding: 0.75rem 0;
+    padding: 0.6rem 0;
     margin-top: 80px; /* Offset for fixed nav */
     color: white;
     font-weight: 700;
     text-align: center;
     position: relative;
     overflow: hidden;
+    z-index: 10;
   }
 
   @keyframes gradientMove {
@@ -35,7 +37,7 @@
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 0.05em;
   }
 
@@ -44,21 +46,43 @@
     color: var(--primary);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 900;
   }
 
   .highlight {
-    color: var(--secondary);
-    text-decoration: underline;
+    color: #ffd700;
+    font-weight: 900;
   }
 
   .countdown {
     background: rgba(0,0,0,0.2);
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 99px;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .deal-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.35rem 1.25rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .deal-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   }
 
   @media (max-width: 640px) {
