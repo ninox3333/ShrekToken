@@ -1,0 +1,92 @@
+---
+---
+<section class="layers-compact" id="tokenomics">
+  <div class="container">
+    <div class="header-compact">
+      <h2 class="text-gradient">ONION LAYERS</h2>
+    </div>
+
+    <div class="layers-grid">
+      <div class="l-card">
+        <span class="l-tag">01</span>
+        <h4>Total Supply</h4>
+        <div class="l-val">1,000,000,000</div>
+      </div>
+
+      <div class="l-card">
+        <span class="l-tag">02</span>
+        <h4>Liquidity</h4>
+        <div class="l-val">100% BURNED</div>
+      </div>
+
+      <div class="l-card">
+        <span class="l-tag">03</span>
+        <h4>Status</h4>
+        <div class="l-val">DEFLATIONARY</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .layers-compact {
+    padding: 4rem 0;
+    background: #000;
+  }
+
+  .header-compact {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-compact h2 {
+    font-size: 2.5rem;
+  }
+
+  .layers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .l-card {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .l-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+  }
+
+  .l-tag {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: var(--primary);
+    opacity: 0.6;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .l-val {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .layers-grid { grid-template-columns: 1fr; }
+  }
+</style>

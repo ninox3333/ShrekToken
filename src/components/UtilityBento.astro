@@ -1,0 +1,128 @@
+---
+---
+<section class="swamp-utility" id="utility">
+  <div class="container">
+    <div class="utility-header">
+      <h2 class="text-gradient">SWAMP POWER</h2>
+      <p>More than just a meme. Features with layers.</p>
+    </div>
+
+    <div class="utility-grid">
+      <!-- Item 1 -->
+      <div class="utility-card glass-card">
+        <div class="card-icon">🧅</div>
+        <div class="card-body">
+          <h3>ONION STAKING</h3>
+          <p>Compound your $SHREK simply by holding. The deeper you go, the more layers of rewards you unlock.</p>
+          <div class="status-tag">ACTIVE</div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="utility-card glass-card">
+        <div class="card-icon">⚡</div>
+        <div class="card-body">
+          <h3>SWAMP-FAST</h3>
+          <p>Solana-powered speed. Instant transactions with near-zero gas for ultra-low latency rewards.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="utility-card glass-card">
+        <div class="card-icon">🛡️</div>
+        <div class="card-body">
+          <h3>OGRE SECURITY</h3>
+          <p>Audit-ready code and locked liquidity. Your swamp is protected by disciplined security measures.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="utility-card glass-card">
+        <div class="card-icon">🗳️</div>
+        <div class="card-body">
+          <h3>GOVERNANCE</h3>
+          <p>Decentralized decision making. The community decides the future of the swamp evolution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .swamp-utility {
+    padding: 4rem 0;
+    background: #000;
+  }
+
+  .utility-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .utility-header h2 { font-size: 2.5rem; }
+  .utility-header p { color: var(--text-muted); font-size: 1rem; }
+
+  .utility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .utility-card {
+    position: relative;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 220px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .utility-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(164, 198, 57, 0.1);
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+
+  .card-body h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+
+  .card-body p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .status-tag {
+    display: inline-block;
+    margin-top: 1.25rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 640px) {
+    .utility-grid { grid-template-columns: 1fr; }
+    .utility-card { min-height: auto; padding: 2rem; }
+  }
+</style>

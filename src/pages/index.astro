@@ -2,43 +2,52 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import FlashDeal from '../components/FlashDeal.astro';
-import Hero from '../components/Hero.astro';
+import HeroElegant from '../components/HeroElegant.astro';
+import FloatingBuy from '../components/FloatingBuy.astro';
+import TokenomicsElegant from '../components/TokenomicsElegant.astro';
+import RoadmapHorizontal from '../components/RoadmapHorizontal.astro';
 import BuySection from '../components/BuySection.astro';
-import Tokenomics from '../components/Tokenomics.astro';
-import Utility from '../components/Utility.astro';
-import Roadmap from '../components/Roadmap.astro';
+import UtilityBento from '../components/UtilityBento.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection.astro';
 ---
 
-<Layout title="Charizard Token // $CHZ - Dragon-Forged Deflationary Asset">
+<Layout title="Shrek Token // $SHREK - The Swamp-Owned Meme King">
+  <FlashDeal />
 	<Navigation />
 	<main>
-		<FlashDeal />
-		<Hero />
+		<HeroElegant />
+
     <CTASection 
-      title="🚀 PRESALE IS LIVE NOW" 
-      subtitle="The strategic evolution starts today. Secure your $CHZ before the next burn event."
+      title="🚀 IT'S ALL OGER NOW" 
+      subtitle="The swamp evolution starts today. SECURE YOUR BAG NOW."
+      buttonText="BUY $SHREK BEFORE IT'S GONE"
       type="success"
     />
+
 		<BuySection />
+
     <CTASection 
-      title="🔥 MULTIPLY YOUR GAINS" 
-      subtitle="Every 0.1 SOL gives you a 10X chance to win the Legendary $10,000 Airdrop!"
+      title="🔥 GET OUT OF MY SWAMP" 
+      subtitle="Every 0.1 SOL gives you a 10X chance to win the Swampy $10,000 Airdrop!"
       buttonText="SEND SOL NOW"
       type="primary"
     />
-		<Tokenomics />
-		<Utility />
+
+		<TokenomicsElegant />
+		<UtilityBento />
+
     <CTASection 
-      title="🛡️ BATTLE-TESTED & SECURE" 
-      subtitle="Join the 1,000,000,000 supply fire-breathing elite squadron."
-      buttonText="JOIN THE FLAME"
+      title="🛡️ SWAMP-TESTED & OGRE SECURE" 
+      subtitle="Join the 1,000,000,000 supply onion-loving elite squad."
+      buttonText="JOIN THE SWAMP"
       type="dark"
     />
-		<Roadmap />
+
+		<RoadmapHorizontal />
 	</main>
 	<Footer />
+  <FloatingBuy />
 </Layout>
 
 <style>

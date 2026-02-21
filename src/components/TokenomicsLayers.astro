@@ -1,0 +1,150 @@
+---
+---
+<section class="onionomics-layers" id="tokenomics">
+  <div class="container">
+    <div class="layers-header">
+      <h2 class="text-gradient">ONION LAYERS</h2>
+      <p>Deep, disciplined, and designed to burn.</p>
+    </div>
+
+    <div class="onion-stack">
+      <!-- Layer 1 -->
+      <div class="onion-layer l1">
+        <div class="layer-info">
+          <span class="layer-num">LAYER 01</span>
+          <h3>TOTAL SUPPLY</h3>
+          <div class="layer-val">1,000,000,000</div>
+          <p>The foundation of the swamp ecosystem. Fixed, verified, and immutable.</p>
+        </div>
+        <div class="layer-visual">🧅</div>
+      </div>
+
+      <!-- Layer 2 -->
+      <div class="onion-layer l2">
+        <div class="layer-info">
+          <span class="layer-num">LAYER 02</span>
+          <h3>LIQUIDITY LOCK</h3>
+          <div class="layer-val">100% SECURE</div>
+          <p>Swamp-tested security. All LP tokens burned to the depths of the mud.</p>
+        </div>
+        <div class="layer-visual">🛡️</div>
+      </div>
+
+      <!-- Layer 3 -->
+      <div class="onion-layer l3">
+        <div class="layer-info">
+          <span class="layer-num">LAYER 03</span>
+          <h3>AUTO-LAYERING</h3>
+          <div class="layer-val">DEFLATIONARY</div>
+          <p>Every milestone peels off a layer of supply, making your $SHREK more valuable.</p>
+        </div>
+        <div class="layer-visual">🔥</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .onionomics-layers {
+    padding: 8rem 0;
+    position: relative;
+    background: #000;
+  }
+
+  .layers-header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .layers-header h2 {
+    font-size: 3.5rem;
+  }
+
+  .layers-header p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+  }
+
+  .onion-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .onion-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 4px; /* Sharper edges */
+    border-left: 10px solid var(--primary);
+    background: #0A0A0A;
+    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .layer-visual {
+    font-size: 10rem;
+    opacity: 0.05;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    filter: grayscale(1);
+    transition: 0.5s;
+  }
+
+  .onion-layer:hover {
+    transform: translateX(20px) scale(1.02);
+    background: #111;
+    border-left-width: 20px;
+    box-shadow: -20px 0 50px rgba(164, 198, 57, 0.1);
+  }
+
+  .onion-layer:hover .layer-visual {
+    opacity: 0.2;
+    transform: scale(1.1) rotate(-10deg);
+  }
+
+  .layer-info {
+    position: relative;
+    z-index: 2;
+  }
+
+  .layer-num {
+    font-size: 0.8rem;
+    font-weight: 950;
+    color: var(--primary);
+    letter-spacing: 0.3em;
+  }
+
+  .layer-info h3 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .layer-val {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .layer-info p {
+    color: var(--text-muted);
+    max-width: 500px;
+    font-size: 1.1rem;
+  }
+
+  /* Variations for each layer */
+  .l2 { border-left-color: #7AC143; }
+  .l3 { border-left-color: #A4C639; }
+
+  @media (max-width: 768px) {
+    .onion-layer { padding: 2rem; flex-direction: column; text-align: center; }
+    .layer-val { font-size: 2rem; }
+    .layer-visual { font-size: 5rem; top: 10px; right: 10px; bottom: auto; }
+  }
+</style>

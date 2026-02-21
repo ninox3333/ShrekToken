@@ -7,9 +7,9 @@ interface Props {
 }
 
 const { 
-  title = "THE FLAME IS GROWING FAST", 
-  subtitle = "Don't miss the chance to be part of the most powerful deflationary token on Solana.", 
-  buttonText = "BUY $CHZ NOW",
+  title = "THE SWAMP IS GROWING FAST", 
+  subtitle = "Don't miss the chance to be part of the most powerful meme token on Solana. SECURE YOUR BAG NOW.", 
+  buttonText = "BUY $SHREK BEFORE IT'S GONE",
   type = "success"
 } = Astro.props;
 
@@ -43,19 +43,20 @@ const btnClass = type === 'success' ? 'btn-success' : type === 'primary' ? 'btn-
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(255, 77, 0, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(164, 198, 57, 0.1) 0%, transparent 70%);
     z-index: -1;
   }
 
   .primary {
-    background: linear-gradient(90deg, rgba(255, 77, 0, 0.05), rgba(255, 31, 0, 0.05));
-    border-top: 1px solid rgba(255, 77, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 77, 0, 0.1);
+    background: linear-gradient(90deg, rgba(164, 198, 57, 0.05), rgba(122, 193, 67, 0.05));
+    border-top: 1px solid rgba(164, 198, 57, 0.1);
+    border-bottom: 1px solid rgba(164, 198, 57, 0.1);
   }
 
   .success {
-    background: linear-gradient(90deg, rgba(0, 200, 83, 0.05), transparent);
-    border-left: 4px solid #00C853;
+    background: linear-gradient(90deg, rgba(164, 198, 57, 0.1), transparent);
+    border-left: 8px solid #A4C639;
+    box-shadow: inset 20px 0 30px -10px rgba(164, 198, 57, 0.1);
   }
 
   .dark {
@@ -84,9 +85,16 @@ const btnClass = type === 'success' ? 'btn-success' : type === 'primary' ? 'btn-
   }
 
   .cta-btn {
-    padding: 1.25rem 3rem;
-    font-size: 1.1rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.25rem;
     white-space: nowrap;
+    box-shadow: 0 10px 40px rgba(164, 198, 57, 0.3);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .cta-btn:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 20px 60px rgba(164, 198, 57, 0.5);
   }
 
   @media (max-width: 900px) {

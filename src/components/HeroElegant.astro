@@ -1,0 +1,122 @@
+---
+---
+<section class="hero-elegant">
+  <div class="container">
+    <div class="hero-flex">
+      <div class="hero-logo-side">
+        <img src="/logo.png" alt="Shrek Token Logo" />
+      </div>
+      
+      <div class="hero-text-side">
+        <div class="mini-badge">SHREK TOKEN // $SHREK</div>
+        <h1 class="elegant-title">The Ogre King of Solana</h1>
+        <p class="elegant-subtitle">Refined, disciplined, and decentralized. Join the swamp elite.</p>
+        
+        <div class="hero-cta">
+          <a href="#buy" class="btn btn-primary">Purchase Now</a>
+          <a href="#tokenomics" class="btn btn-outline">Tokenomics</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-elegant {
+    padding: 6rem 0;
+    background: radial-gradient(circle at center, #111 0%, var(--background) 100%);
+    overflow: hidden;
+  }
+
+  .hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 1.5rem;
+  }
+
+  .hero-logo-side {
+    flex: 0 0 160px;
+    filter: drop-shadow(0 0 30px rgba(164, 198, 57, 0.15));
+    animation: floating-mini 4s ease-in-out infinite;
+  }
+
+  .hero-logo-side img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero-text-side {
+    flex: 1;
+  }
+
+  @keyframes floating-mini {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .mini-badge {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .elegant-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.25rem;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  .elegant-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  @media (max-width: 900px) {
+    .hero-flex {
+      flex-direction: column;
+      text-align: center;
+      gap: 2.5rem;
+    }
+    .hero-logo-side { 
+      flex: 0 0 auto; 
+      width: 100px;
+    }
+    .elegant-title { font-size: 2.8rem; }
+    .hero-cta { justify-content: center; }
+    .elegant-subtitle { margin: 0 auto 3rem; }
+  }
+
+  @media (max-width: 600px) {
+    .hero-logo-side { width: 120px; }
+    .elegant-title { font-size: 2.2rem; }
+    .hero-cta { flex-direction: column; }
+    .btn { width: 100%; }
+  }
+</style>

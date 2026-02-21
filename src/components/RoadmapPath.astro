@@ -1,0 +1,145 @@
+---
+---
+<section class="swamp-path" id="roadmap">
+  <div class="swamp-mist"></div>
+  <div class="container">
+    <div class="path-header">
+      <h2 class="text-gradient">SWAMP PATH</h2>
+      <p>The journey to total ogre domination.</p>
+    </div>
+
+    <div class="zig-zag-path">
+      <div class="path-line"></div>
+      
+      <!-- Phase 1 -->
+      <div class="path-node node-left">
+        <div class="node-marker">01</div>
+        <div class="node-content glass-card">
+          <h3>THE SWAMPING</h3>
+          <p>Initial launch on Solana. Organic community takeover. First layering event and $SHREK propagation.</p>
+          <span class="node-status active">IN PROGRESS</span>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="path-node node-right">
+        <div class="node-marker">02</div>
+        <div class="node-content glass-card">
+          <h3>ONION LAYERS</h3>
+          <p>Donkey-approved ecosystem growth. Major CEX listings. First wave of Ogre NFTs.</p>
+          <span class="node-status">UPCOMING</span>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="path-node node-left">
+        <div class="node-marker">03</div>
+        <div class="node-content glass-card">
+          <h3>FARQUAAD FALL</h3>
+          <p>Complete meme-fi dominance. DAO governance active. Infinite swamp expansion.</p>
+          <span class="node-status">UPCOMING</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .swamp-path {
+    padding: 10rem 0;
+    background: #050505;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .path-header {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  .path-header h2 { font-size: 4rem; }
+
+  .zig-zag-path {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .path-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary), #000);
+    opacity: 0.3;
+  }
+
+  .path-node {
+    display: flex;
+    width: 100%;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .node-left { justify-content: flex-start; }
+  .node-right { justify-content: flex-end; }
+
+  .node-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: var(--primary);
+    box-shadow: 0 0 20px rgba(164, 198, 57, 0.4);
+  }
+
+  .node-content {
+    width: 42%;
+    padding: 3rem;
+    position: relative;
+    transition: 0.3s;
+    border-radius: 4px;
+    background: rgba(164, 198, 57, 0.05);
+  }
+
+  .node-content:hover {
+    transform: scale(1.05);
+    background: rgba(164, 198, 57, 0.1);
+    border-color: var(--primary);
+  }
+
+  h3 { color: var(--primary); margin-bottom: 1rem; }
+
+  .node-status {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    opacity: 0.6;
+  }
+
+  .node-status.active {
+    color: var(--primary);
+    opacity: 1;
+    animation: flash 1s infinite alternate;
+  }
+
+  @media (max-width: 768px) {
+    .path-line { left: 30px; }
+    .node-marker { left: 30px; transform: none; width: 40px; height: 40px; font-size: 0.8rem; }
+    .node-content { width: calc(100% - 80px); margin-left: 80px; padding: 1.5rem; }
+    .node-left, .node-right { justify-content: flex-start; }
+  }
+</style>

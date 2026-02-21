@@ -1,0 +1,118 @@
+---
+---
+<section class="roadmap-h" id="roadmap">
+  <div class="container">
+    <div class="section-header-compact">
+      <h2 class="text-gradient">ROADMAP</h2>
+    </div>
+
+    <div class="timeline-h">
+      <div class="timeline-line"></div>
+      
+      <div class="phase-h">
+        <div class="phase-dot active">01</div>
+        <div class="phase-info">
+          <h4>Swamping</h4>
+          <p>Launch & Community Focus</p>
+        </div>
+      </div>
+
+      <div class="phase-h">
+        <div class="phase-dot">02</div>
+        <div class="phase-info">
+          <h4>Layers</h4>
+          <p>Listings & NFT Wave</p>
+        </div>
+      </div>
+
+      <div class="phase-h">
+        <div class="phase-dot">03</div>
+        <div class="phase-info">
+          <h4>Dominance</h4>
+          <p>Global Expansion</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .roadmap-h {
+    padding: 4rem 0;
+    background: #000;
+  }
+
+  .section-header-compact {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-header-compact h2 {
+    font-size: 2.5rem;
+  }
+
+  .timeline-h {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .timeline-line {
+    position: absolute;
+    top: 25px;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: var(--glass-border);
+    z-index: 1;
+  }
+
+  .phase-h {
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    text-align: center;
+  }
+
+  .phase-dot {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border: 2px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    transition: 0.3s;
+  }
+
+  .phase-dot.active {
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .timeline-h { flex-direction: column; gap: 2rem; }
+    .timeline-line { display: none; }
+    .phase-h { width: 100%; text-align: left; display: flex; align-items: center; gap: 1.5rem; }
+    .phase-dot { margin: 0; }
+  }
+</style>

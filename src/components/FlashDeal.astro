@@ -3,28 +3,29 @@
 ---
 <div class="flash-deal">
   <div class="container deal-content">
-    <div class="deal-badge">🔥 FLASH DEAL</div>
-    <p>INSTANT <span class="highlight">10% CASHBACK</span> ON EVERY PURCHASE!</p>
+    <div class="deal-badge">🧅 QUICK DEAL</div>
+    <p>INSTANT <span class="highlight">Ogre-fast bonuses</span> ON EVERY PURCHASE!</p>
     <div class="countdown" id="deal-countdown">
-      ENDS IN <span id="timer">12:54:21</span>
+      LAYERS CLOSING IN: <span id="timer">12:54:21</span>
     </div>
-    <a href="#buy" class="deal-btn">BUY NOW</a>
+    <a href="#buy" class="deal-btn">SECURE $SHREK</a>
   </div>
 </div>
 
 <style>
   .flash-deal {
-    background: linear-gradient(90deg, #FF4D00, #FF1F00, #FF4D00);
+    background: linear-gradient(90deg, #A4C639, #7AC143, #A4C639);
     background-size: 200% auto;
     animation: gradientMove 3s linear infinite;
-    padding: 0.6rem 0;
-    margin-top: 80px; /* Offset for fixed nav */
-    color: white;
-    font-weight: 700;
+    padding: 0.4rem 0;
+    margin-top: 0;
+    color: #050505;
+    font-weight: 800;
     text-align: center;
     position: relative;
     overflow: hidden;
     z-index: 10;
+    box-shadow: 0 4px 20px rgba(164, 198, 57, 0.4);
   }
 
   @keyframes gradientMove {
@@ -38,13 +39,13 @@
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
   }
 
   .deal-badge {
-    background: white;
-    color: var(--primary);
+    background: #050505;
+    color: #A4C639;
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     font-size: 0.7rem;
@@ -52,12 +53,13 @@
   }
 
   .highlight {
-    color: #ffd700;
+    color: #050505;
     font-weight: 900;
+    text-decoration: underline;
   }
 
   .countdown {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.1);
     padding: 0.2rem 0.8rem;
     border-radius: 99px;
     font-family: monospace;
@@ -68,22 +70,21 @@
     background: #000;
     color: #fff;
     padding: 0.35rem 1.25rem;
-    border-radius: 99px;
+    border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.2s;
+    border: 2px solid transparent;
   }
 
   .deal-btn:hover {
     background: #fff;
     color: #000;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transform: scale(1.05) skewX(-5deg);
+    border-color: #000;
   }
 
   @media (max-width: 640px) {

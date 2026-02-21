@@ -4,31 +4,36 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <div class="logo">
-        <img src="/logo.png" alt="Charizard Token Logo" class="footer-logo" />
-        CHARIZARD <span class="text-gradient">TOKEN</span>
+        <img src="/logo.png" alt="Shrek Token Logo" class="footer-logo" />
+        SHREK <span class="text-gradient">TOKEN</span>
       </div>
-      <p>The strategic evolution of meme-fi. Fast. Deflationary. Unstoppable.</p>
+      <p>The strategic evolution of swampmeme-fi. Fast. Ogre-strong. Unstoppable.</p>
     </div>
     
     <div class="footer-links">
       <div class="link-group">
         <h4>Ecosystem</h4>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#buy">Buy $CHZ</a>
+        <a href="#tokenomics">Onionomics</a>
+        <a href="#buy">Buy $SHREK</a>
         <a href="#utility">Utility</a>
       </div>
       <div class="link-group">
         <h4>Community</h4>
-        <a href="https://t.me/+vQBILWIpJqQwOGI0" target="_blank">Telegram</a>
         <a href="https://x.com/Token_Charizard" target="_blank">Twitter / X</a>
       </div>
     </div>
   </div>
   
   <div class="footer-bottom">
-    <div class="container">
-      <p>&copy; 2026 Charizard Token. Fan-made homage inspired by the legend of Charizard.</p>
-      <p class="disclaimer">Always DYOR. Crypto assets carry risk.</p>
+    <div class="container footer-bottom-content">
+      <div class="footer-legal">
+        <p class="copyright">© 2026 Shrek Token. Fan-made homage inspired by the legend of Shrek.</p>
+        <p class="risk">Always DYOR. Crypto assets carry risk.</p>
+      </div>
+      <div class="footer-badge">
+        <span class="pulse-green"></span>
+        ESTABLISHED IN THE SWAMP
+      </div>
     </div>
   </div>
 </footer>
@@ -89,21 +94,67 @@
   }
 
   .footer-bottom {
-    padding-top: 2rem;
+    padding: 3rem 0;
     border-top: 1px solid var(--glass-border);
-    text-align: center;
     font-size: 0.8rem;
     color: var(--text-muted);
   }
 
-  .disclaimer {
-    margin-top: 0.5rem;
-    opacity: 0.6;
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-legal p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .copyright {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .risk {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+  }
+
+  .footer-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: var(--primary);
+    border: 1px solid rgba(164, 198, 57, 0.2);
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    letter-spacing: 0.15em;
+    background: rgba(164, 198, 57, 0.02);
+  }
+
+  .pulse-green {
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+    animation: pulse-small 2s infinite;
+  }
+
+  @keyframes pulse-small {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
   }
 
   @media (max-width: 768px) {
     .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
     .footer-links { gap: 2rem; }
+    .footer-bottom-content { flex-direction: column; text-align: center; gap: 1.5rem; }
   }
 </style>
-

@@ -1,0 +1,228 @@
+---
+---
+<section class="hero-central">
+  <div class="swamp-mist"></div>
+  <div class="container hero-container">
+    <div class="hero-bg-logo">
+      <div class="swamp-glow-large"></div>
+    </div>
+    
+    <div class="hero-main-content">
+      <div class="hero-logo-main">
+        <img src="/logo.png" alt="Shrek Token Logo" />
+      </div>
+      <div class="badge-sharp">
+        <span class="pulse-dot"></span>
+        SHREK IS LIVE
+      </div>
+      
+      <h1 class="mega-title">
+        SWAMP YOUR <br/>
+        <span class="text-gradient">WEALTH</span>
+      </h1>
+      
+      <div class="hero-impact-stats">
+        <div class="i-stat">
+          <span class="val">1B</span>
+          <span class="lab">SUPPLY</span>
+        </div>
+        <div class="divider"></div>
+        <div class="i-stat">
+          <span class="val">$10K</span>
+          <span class="lab">BOUNTY</span>
+        </div>
+      </div>
+
+      <p class="hero-pitch">
+        The ultimate ogre evolution. $SHREK isn't just a meme, it's a <strong>hostile takeover</strong> of the meme-fi space. Layers deeper than the rest.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#buy" class="btn-mega primary">GET $SHREK NOW</a>
+        <a href="#tokenomics" class="btn-mega outline">ONIONOMICS</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-central {
+    position: relative;
+    padding: 8rem 0 12rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at center, #1A1A00 0%, var(--background) 70%);
+    overflow: hidden;
+  }
+
+  .hero-bg-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .swamp-glow-large {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(164, 198, 57, 0.15) 0%, transparent 70%);
+    filter: blur(60px);
+    animation: pulse-glow 8s infinite alternate;
+  }
+
+  .hero-logo-main {
+    width: 280px;
+    margin: 0 auto 2rem;
+    position: relative;
+    z-index: 5;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 30px rgba(164, 198, 57, 0.4));
+  }
+
+  .hero-logo-main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .hero-main-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .badge-sharp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #000;
+    color: var(--primary);
+    padding: 0.6rem 2rem;
+    border: 1px solid var(--primary);
+    font-weight: 900;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 0 30px rgba(164, 198, 57, 0.2);
+    transform: skewX(-5deg);
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+    animation: flash 1s infinite alternate;
+  }
+
+  @keyframes flash {
+    from { opacity: 0.3; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1.2); }
+  }
+
+  .mega-title {
+    font-size: 6rem;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 50px rgba(164, 198, 57, 0.3);
+  }
+
+  .hero-impact-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .i-stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .i-stat .val {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .i-stat .lab {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .divider {
+    width: 2px;
+    height: 40px;
+    background: var(--glass-border);
+  }
+
+  .hero-pitch {
+    font-size: 1.35rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    line-height: 1.6;
+  }
+
+  .hero-cta-group {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .btn-mega {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+  }
+
+  .btn-mega.primary {
+    background: var(--primary);
+    color: #000;
+    box-shadow: 0 15px 40px rgba(164, 198, 57, 0.4);
+  }
+
+  .btn-mega.primary:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 25px 60px rgba(164, 198, 57, 0.6);
+  }
+
+  .btn-mega.outline {
+    background: transparent;
+    border: 2px solid var(--glass-border);
+    color: #fff;
+  }
+
+  .btn-mega.outline:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.05);
+  }
+
+  @media (max-width: 1024px) {
+    .mega-title { font-size: 4rem; }
+    .hero-bg-logo { width: 400px; }
+  }
+
+  @media (max-width: 640px) {
+    .mega-title { font-size: 3rem; }
+    .hero-impact-stats { gap: 1.5rem; }
+    .hero-cta-group { flex-direction: column; }
+    .btn-mega { width: 100%; text-align: center; }
+  }
+</style>
